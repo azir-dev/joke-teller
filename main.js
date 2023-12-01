@@ -1,6 +1,8 @@
 import "./style.css";
+// 引入语音转文本第三方 sdk
 import VoiceRSS from "./voicerss-tts.min";
 
+// joke api url
 const jokeUrl =
   "https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit";
 
@@ -9,8 +11,7 @@ const button = document.getElementById("button");
 const jokeContainer = document.getElementById("joke");
 
 /**
- *
- * @returns {String}
+ * @returns {String} 返回 joke 或是一个错误
  */
 async function getAJoke() {
   try {
@@ -26,7 +27,7 @@ async function getAJoke() {
 }
 
 /**
- *
+ * 语音转文本
  * @param {String} src 转语音文本
  */
 function textToSpeech(src) {
@@ -42,6 +43,7 @@ function textToSpeech(src) {
   });
 }
 
+// 给讲笑话按钮添加点击事件
 button.addEventListener("click", async () => {
   jokeContainer.hidden = true;
   const joke = await getAJoke();
