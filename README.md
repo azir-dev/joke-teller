@@ -4,7 +4,7 @@
 
 在线预览 [GitHub Pages](https://azir-dev.github.io/joke-teller/)
 
-## 要点文档
+## 要点及文档
 
 - 第三方 SDK 的使用
 - [fetch](https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API/Using_Fetch)
@@ -19,6 +19,14 @@
 > Joke 笑话 API 提供方
 
 - https://sv443.net/jokeapi/v2/
+
+> 动画背景 Gif C4D 模型
+
+- https://giphy.com/
+
+> 字体库
+
+- [Google Fonts](https://fonts.google.com/)
 
 ## 技术栈
 
