@@ -10,13 +10,28 @@ body {
   margin: 0;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 4rem;
   background-image: url("/robot.gif");
   background-repeat: no-repeat;
   background-position: left center;
   background-color: #45badd;
   background-size: contain;
+}
+
+.joke {
+  font-family: "Noto Serif TC", serif;
+  background-color: #00000060;
+  color: whitesmoke;
+  padding: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  max-width: 24rem;
+  border: 2px solid whitesmoke;
+  border-radius: 1rem;
 }
 
 button {

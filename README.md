@@ -6,7 +6,19 @@
 
 ## 要点文档
 
+- 第三方 SDK 的使用
+- [fetch](https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API/Using_Fetch)
+- [Promise](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+
 ## 感谢免费资源提供商
+
+> Text to Speech 文本转语音
+
+- https://www.voicerss.org/
+
+> Joke 笑话 API 提供方
+
+- https://sv443.net/jokeapi/v2/
 
 ## 技术栈
 
