@@ -9,6 +9,7 @@ const jokeUrl =
 // DOM
 const button = document.getElementById("button");
 const jokeContainer = document.getElementById("joke");
+const audioElement = document.getElementById("audio");
 
 /**
  * @returns {String} 返回 joke 或是一个错误
@@ -31,22 +32,31 @@ async function getAJoke() {
  * @param {String} src 转语音文本
  */
 function textToSpeech(src) {
-  VoiceRSS.speech({
-    key: "35e26687b6fb441e9eca2e60e8e395d7",
-    src: src,
-    hl: "en-us",
-    v: "Linda",
-    r: 0,
-    c: "mp3",
-    f: "44khz_16bit_stereo",
-    ssml: false,
-  });
+  VoiceRSS.speech(
+    {
+      key: "35e26687b6fb441e9eca2e60e8e395d7",
+      src: src,
+      hl: "en-us",
+      v: "Linda",
+      r: 0,
+      c: "mp3",
+      f: "44khz_16bit_stereo",
+      ssml: false,
+    },
+    audioElement
+  );
 }
 
 // 给讲笑话按钮添加点击事件
 button.addEventListener("click", async () => {
   jokeContainer.hidden = true;
+  button.disabled = true;
   const joke = await getAJoke();
-  console.log(joke);
+  // console.log(joke);
   textToSpeech(joke);
+});
+
+// 监听 audio element 的结束事件激活 button
+audioElement.addEventListener("ended", () => {
+  button.disabled = false;
 });

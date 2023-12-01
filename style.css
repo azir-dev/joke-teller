@@ -57,6 +57,11 @@ button:active {
   transform: scale(0.98);
 }
 
+button:disabled {
+  cursor: default;
+  filter: brightness(20%);
+}
+
 @media screen and (max-width: 62.5em) {
   body {
     background-position: center center;
