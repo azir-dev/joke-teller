@@ -1,0 +1,50 @@
+/* ROBOT.GIF from Giphy - https://giphy.com/gifs/robot-cinema-4d-eyedesyn-3o7abtn7DuREEpsyWY */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(robot.gif);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-color: #45badd;
+  background-size: contain;
+}
+
+button {
+  font-family: "Noto Serif TC", serif;
+  font-size: 1.8rem;
+  font-weight: 200;
+  letter-spacing: 2px;
+  color: white;
+  background-color: #ff3482;
+  padding: 1rem 2.4rem;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 2px 2px 20px 8px #00000030;
+  outline: none;
+  border: none;
+}
+
+button:hover {
+  filter: brightness(95%);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+@media screen and (max-width: 62.5em) {
+  body {
+    background-position: center center;
+    background-size: cover;
+  }
+}
