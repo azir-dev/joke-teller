@@ -12,7 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(robot.gif);
+  background-image: url("./robot.gif");
   background-repeat: no-repeat;
   background-position: left center;
   background-color: #45badd;
